@@ -9,6 +9,7 @@ body {
     width: 100%;
     height: auto;
     position: relative;
+    background-image:linear-gradient(rgb(10, 1, 254), rgba(51, 58, 80, 0.66), rgba(107, 206, 215, 0.836), rgb(0, 0, 0));
 }
 
 /* header section */
@@ -148,11 +149,17 @@ main {
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
+#b2 ion-icon{
+    color:black;
+}
+#b2 ion-icon:hover{
+    color:#cc2366;
+}
 #b2:hover {
     transform: scale(1.2);
     transition-duration: 1s;
     background: none;
-    color:  #cc2366; 
+    /* color:  #cc2366;  */
     background-color: white;
 }
 #b3 {
@@ -215,7 +222,9 @@ main {
 .twitter .tooltip {
     background-color: #1E90FF;
 }
-
+a {
+    text-decoration: black;
+}
 /* footer section */
 footer {
     width: 100%;
