@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
 body {
     width: 100%;
     height: auto;
+    color:white;
 }
 
 /* section for research */
@@ -48,6 +50,10 @@ body {
     width: 100%;
     height: 49vh;
     border-radius: 20px;
+}
+.s2as1is1 img:hover {
+    transform: scale(1.1);
+    transition-duration: 2s;
 }
 .s2as1is2 {
     width: 45%;
