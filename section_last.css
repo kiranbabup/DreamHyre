@@ -77,15 +77,23 @@ body {
     transform: scale(2,4);
 }
 #s4 button {
-    width: 13%;
-    height: 3rem;
+    width: 10%;
+    height: 2.2rem;
+    border-radius: 2rem;
     color: brown;
-    border-color: brown;
+    /* border-color: brown; */
+    border: none;
     background-color: white;
+    transition: all 1s;
+    overflow: hidden;
+    font-size: 15px;
 }
 #s4 button:hover{
-    background-color:rgba(170, 96, 239, 0.899);
+    background-color:rgba(5, 168, 233, 0.659);
     color: white;
+    border: none;
+    width: 15%;
+    font-size: 15px;
 }
 #s4 p {
     width: 50%;
