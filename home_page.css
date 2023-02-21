@@ -275,14 +275,14 @@ footer aside {
     padding-top: 1rem;
 }
 #cu button {
-    background-color: rgba(21, 21, 21, 0.879);
+    background-color: green;
     width: 25%;
     height: 3rem;
     border-radius: 50%;
     border: none;
 }
 #cu button:hover {
-    background-color: black;
+    background-color: rgba(21, 21, 21, 0.879) ;
     transform: scale(1.1);
     transition-duration: 1s;
 }
