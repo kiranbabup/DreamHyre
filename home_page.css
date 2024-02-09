@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image:linear-gradient(rgb(10, 1, 254), rgba(51, 58, 80, 0.66), rgba(107, 206, 215, 0.836), rgb(0, 0, 0));
+}
+
+/* header section */
+header {
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 1px black;
+    background-color: rgb(67, 57, 57);
+}
+header:hover {
+    background-color: rgba(47, 79, 79, 0.727);
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+}
+header h1 {
+    width: 40%;
+    font-size: 2.1rem;
+    padding: .6rem;
+    /* background-color: blue; */
+}
+ul {
+    width: 40%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: blueviolet; */
+    font-size: 1.2rem;
+}
+nav li:hover {
+    color: #00BFFF;
+    transform: scale(1.4);
+    transition-duration: .5s;
+}
+
+/* landing page section */
+main {
+    width: 100%;
+    height: auto;
+    margin-top: 0rem;
+}
+#s1 {
+    width: 100%;
+    height: 760px;
+    position: relative;
+    /* border: 1px solid green; */
+    overflow: hidden;
+}
+#s1 img {
+    width: 100%;
+    height: 760px;
+    position: absolute;
+}
+#s1 aside {
+    width: 48%;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.752);
+    position: absolute;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 40px 30px rgba(0, 0, 0, 0.752),0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+}
+#s1 article {
+    width: 70%;
+    height: 20rem;
+    color: white;
+    /* background-color: blue; */
+    position: absolute;
+    top: 12rem;
+    left: 10rem;
+}
+#s1 h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+#s1 h1:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    padding-left: 2.5rem;
+}
+#s1 p {
+    font-size: 1.5rem;
+}
+#s1 button {
+    width: 30%;
+    height: 3rem;
+    border-radius: 10rem;
+    border: none;
+    background-color: orange;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+#s1 button:hover {
+    background-color: orangered;
+}
+
+/* social media section */
+#social {
+    left: 10px;
+    width: 4rem;
+    height: 19rem;
+    /* background-color: gray; */
+    position: fixed;
+    top: 200px;
+    padding-top: 2rem;
+}
+#social button {
+    border-radius: 50%;
+    border: none;
+    margin: .5rem;
+    height: 3.3rem;
+    width: 3.3rem;
+}
+#social button ion-icon{
+    margin: .5rem;
+    font-size: 2.2rem;
+}
+#b1 {
+    background-color: #4169E1;
+}
+#b1:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    color: #4169E1;
+    background-color: white;
+}
+#b2 {
+    background-color: #f09433;
+    background-color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background-color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+#b2 ion-icon{
+    color:black;
+}
+#b2 ion-icon:hover{
+    color:#cc2366;
+}
+#b2:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    background: none;
+    /* color:  #cc2366;  */
+    background-color: white;
+}
+#b3 {
+    background-color: #4242e9cb;
+}
+#b3:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    color: #4242e9cb;
+    background-color: white;
+}
+#b4 {
+    background-color: #1E90FF;
+}
+#b4:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    color: #1E90FF;
+    background-color: white;
+}
+.tooltip {
+    position: absolute;
+    right: 0;
+    background: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1) ;
+    font-size: 20px;
+    border-radius: 25px;
+    pointer-events: none;
+    left: 70px;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    opacity: 0;
+    /* transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+#social .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    right: -80px;
+    transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/* #social .icon .tooltip::before {
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50deg) rotate(45deg);
+} */
+.linkedin .tooltip {
+    background-color: #4169E1;
+}
+.instagram .tooltip {
+    background-color: #f09433;
+    background-color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background-color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.facebook .tooltip {
+    background-color: #4242e9cb;
+}
+.twitter .tooltip {
+    background-color: #1E90FF;
+}
+a {
+    text-decoration: black;
+}
+/* footer section */
+footer {
+    width: 100%;
+    height: 28vh;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    display: flex;
+    bottom: 0;
+}
+footer aside {
+    width: 100%;
+    height: 28vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#fas1 {
+    width: 20%;
+    height: 21vh;
+    /* background-color: black; */
+}
+#fas1 img {
+    width: 20rem;
+    height: 8rem;
+}
+/* #fas1 p {
+    margin-bottom: 2rem;
+}  */
+#fas2 {
+    width: 20%;
+    height: 21vh;
+    /* background-color: brown; */
+}
+#fas2 h1 {
+    font-size: 2rem;
+}
+#fas3 {
+    width: 20%;
+    height: 21vh;
+    /* background-color: green; */
+}
+#cu {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+#cu h3 {
+    padding-top: 1rem;
+}
+#cu button {
+    background-color: green;
+    width: 25%;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+}
+#cu button:hover {
+    background-color: rgba(21, 21, 21, 0.879) ;
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+#cu ion-icon {
+    color: white;
+    font-size: 1.5rem;
+}
